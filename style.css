@@ -1,8 +1,8 @@
 body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-y: scroll;
+    	padding: 0;
+    	margin: 0;
+    	box-sizing: border-box;
+    	overflow-y: scroll;
 	scroll-behavior: smooth;
 	scrollbar-width: thin !important;
 	scrollbar-color: #006B5D transparent !important;
