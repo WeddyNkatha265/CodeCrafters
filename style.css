@@ -6,7 +6,7 @@ body{
 	scroll-behavior: smooth;
 	scrollbar-width: thin !important;
 	scrollbar-color: #006B5D transparent !important;
-    background-color: #f2f2f2 !important;
+    	background-color: #f2f2f2 !important;
 }
 ::-webkit-scrollbar{
 	width: 7px;
