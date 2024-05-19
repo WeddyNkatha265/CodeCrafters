@@ -180,7 +180,7 @@ body{
 }
 .footer-social-icon a {
   color: #fff;
-  font-size: 16px;
+  font-size: 24px;
   margin-right: 15px;
 }
 .footer-social-icon a:hover {
@@ -197,10 +197,16 @@ body{
   background: #3B5998;
 }
 .twitter-bg{
-  background: #55ACEE;
+  background: #000;
 }
-.google-bg{
-  background: #DD4B39;
+.youtube-bg{
+  background: #FF0000;
+}
+.instagram-bg{
+  background: radial-gradient(circle farthest-corner at 35% 90%, #FEC564, transparent 50%),radial-gradient(circle farthest-corner at 0 140%, #FEC564, transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%, #5258CF, transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%, #5258CF, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0, #893DC2, transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%, #893DC2, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%, #D9317A, transparent),linear-gradient(#6559CA, #BC318F 30%, #E33F5F 50%, #F77638 70%, #FEC66D 100%);
+}
+.whatsapp-bg{
+  background: #32CD32;
 }
 .footer-widget-heading h3 {
   color: #fff;
