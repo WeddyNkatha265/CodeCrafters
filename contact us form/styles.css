@@ -1,0 +1,147 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 117, 0.466);
+}
+
+.contact-form-container{
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 119, 0.493);
+    border-radius: 19px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input,  textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgba(23, 23, 119, 0.856);
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(23, 23, 119, 0.404);
+}
+
+footer {
+    background-color: rgba(0, 0, 119, 0.493);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer h3{
+    color: black;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.fb{
+    margin-right: 10px;
+}
+
+.ig{
+    margin-right: 10px;
+}
+
+.twt{
+    margin-right: 10px;
+}
+
+.lnkdn{
+    margin-right: 10px;
+}
+
+i{
+    color: rgb(23, 23, 119);
+    margin-right: 4px;
+}
+
+@media(min-width:700px){
+    .contact-form-container{
+        width: 55%;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 119, 0.493);
+        border-radius: 19px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media(min-width: 1200px){
+
+    .contact-form-container{
+        width: 35%;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 119, 0.493);
+        border-radius: 19px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-media a{
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+    
+    .fb{
+        margin-right: 15px;
+    }
+    
+    .ig{
+        margin-right: 15px;
+    }
+    
+    .twt{
+        margin-right: 15px;
+    }
+    
+    .lnkdn{
+        margin-right: 15px;
+    }
+    
+    i{
+        color: rgb(23, 23, 119);
+        margin-right: 5px;
+    }
+}
