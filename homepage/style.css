@@ -88,11 +88,11 @@ body{
 	transform: translateX(-50%);
 	border: 2px solid #00ffff;
 }
-/* #howitworks-section h5{
+#howitworks-section h5{
     color: #006b5d;
     font-size: x-large;
     font-weight: bold;
-} */
+}
 .overlay-container {
 	position: relative;
 }
