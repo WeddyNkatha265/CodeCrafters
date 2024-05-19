@@ -186,7 +186,7 @@ body{
 .footer-social-icon a:hover {
 	color: #00ffff !important;
 }
-.footer-social-icon i {
+.footer-social-icon i, .footer-social-icon svg {
   height: 40px;
   width: 40px;
   text-align: center;
