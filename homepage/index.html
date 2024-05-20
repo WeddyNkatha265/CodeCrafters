@@ -113,7 +113,7 @@
             <img src="../images/img3.png" class="d-block w-100" alt="Slide 1" style="height: 550px;">
             <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
               <h1 class="bg-dark bg-opacity-50 py-2 px-4 fw-bold" style="font-size: 4vw;"><b style="color: #00ffff;">Waste Wisely, </b>Live Greenly </h1>
-              <h4 class="bg-dark bg-opacity-50 py-2 px-4 fw-bold">Providing sustainable waste management solutions in Nigeria.</h4>
+              <h4 class="bg-dark bg-opacity-50 py-2 px-4 fw-bold">Providing sustainable waste management solutions in Africa.</h4>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
@@ -203,7 +203,7 @@
 
 <section id="howitworks-section">
   <div class="container">
-    <h2>How It Works</h2>
+    <p class="weddy"><b>HOW IT WORKS</b></p>
     <p>Our innovative waste management system is designed for convenience, sustainability, and rewarding participation.</p>
     <div class="row">
       <div class="col-md-4 mb-4">
@@ -266,10 +266,89 @@
   </div>
 </section>
 
+      <!-- money-->
+      <section id="bin-selection-section">
+        <div class="container">
+          <h2>Customize Your Bins</h2>
+          <p>Select the size and type of bins you need for your waste management needs.</p>
+          <form id="bin-selection-form">
+            <div class="bin-container">
+              <div class="row mb-4 bin-item" data-bin-id="1">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="bin-size">Bin Size:</label>
+                    <select class="form-control bin-size" id="bin-size-1">
+                      <option value="small">Small (10 liters) - $5</option>
+                      <option value="medium">Medium (20 liters) - $10</option>
+                      <option value="large">Large (30 liters) - $15</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="bin-type">Bin Type:</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input bin-type" type="checkbox" value="organic" id="organic-bin-1">
+                      <label class="form-check-label" for="organic-bin-1">Organic Waste</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input bin-type" type="checkbox" value="plastic" id="plastic-bin-1">
+                      <label class="form-check-label" for="plastic-bin-1">Plastic</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input bin-type" type="checkbox" value="glass" id="glass-bin-1">
+                      <label class="form-check-label" for="glass-bin-1">Glass</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input bin-type" type="checkbox" value="paper" id="paper-bin-1">
+                      <label class="form-check-label" for="paper-bin-1">Paper</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input bin-type" type="checkbox" value="Electronic" id="Electronic">
+                        <label class="form-check-label" for="Electronic-bin-1">Electronic</label>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <p class="bin-price" id="bin-price-1">.</p>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary mb-4" id="add-bin">Add Another Bin</button>
+            <h2>Recycling</h2>
+            <p>Select the recyclable materials you generate:</p>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="recycle-plastic" value="plastic">
+              <label class="form-check-label" for="recycle-plastic">Plastic ($0.10/kg)</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="recycle-glass" value="glass">
+              <label class="form-check-label" for="recycle-glass">Glass ($0.15/kg)</label>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="recycle-paper" value="paper">
+              <label class="form-check-label" for="recycle-paper">Paper ($0.05/kg)</label>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="Electronic" value="Electronic">
+                <label class="form-check-label" for="Electronic">Electronic ($0.20/kg)</label>
+              </div>
+            <h2>Waste Management</h2>
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="recycling-partner">Recycling Partner:</label>
+                  <select class="form-control" id="recycling-partner">
+                    <option value="partner1">Recycle Right</option>
+                    <option value="partner2">Green Cycle </option></select></div>
+                    </section>
+      
+    <!--end of money-->
+
 
 <section id="contactus-section">
   <div class="container">
-    <h2>Contact Us</h2>
+    <h2 class="nkatha">Contact Us</h2>
     <p>Have questions or ready to get started? Reach out to us!</p>
     <div class="row">
       <div class="col-md-6 mb-4">
@@ -290,11 +369,7 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
-      <div class="col-md-6 mb-4">
-        <p>Phone: (+234)8165896542</p>
-        <p>Email: contactus@codecrafters.com</p>
-        <p>Address: 12, Abba Adamu Road, Abuja</p>
-      </div>
+      
     </div>
   </div>
 </section>
