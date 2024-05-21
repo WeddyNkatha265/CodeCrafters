@@ -1,54 +1,52 @@
+/* services.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.header {
+  text-align: center;
+  color: #006b5d;
+}
+
 .top-container {
-  background-color: #f2f2f2 !important;
-}
-::-webkit-scrollbar {
-  width: 7px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #006b5d;
-}
-.nav-link:hover {
-  color: #00ffff !important;
-}
-.others a:hover {
-  color: #00ffff !important;
+  padding: 10px 0;
 }
 
-/* CSS for expanded quote section */
-#quote {
-  overflow: hidden;
-  transition: height 0.3s ease;
-}
-
-#quote.expanded {
-  height: auto;
-  padding: 2rem 0;
-}
-
-.btn-container {
+.service {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
   text-align: center;
 }
 
-.btn-container .btn {
-  display: inline-block;
-  padding: 1rem 2rem;
+.service-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+#quote {
+  padding: 40px 0;
+}
+
+#quote .btn-container .btn {
   background-color: #006b5d;
   color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.btn-container .btn:hover {
-  background-color: #004c43;
-}
-
-@media screen and (orientation: landscape) {
-  .carousel img {
-    height: 100vh;
-  }
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 
 .overlay-container {
@@ -286,78 +284,4 @@
     padding: 15px;
     border-radius: 50%;
   }
-}
-
-header {
-  /* background-color: #006b5d; */
-  color: black;
-  text-align: center;
-  padding: 2rem;
-}
-
-.services .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-#services {
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.service {
-  max-width: 1000px;
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin: 0 auto;
-}
-
-.service img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.service h3 {
-  color: #006b5d;
-  font-size: 1.5rem;
-}
-
-.service p {
-  font-size: 1.1rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #006b5d;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #004c43;
-}
-
-.btn-container {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-li {
-  list-style-type: none;
-}
-
-li a {
-  color: white;
-  text-decoration: none;
 }

@@ -16,9 +16,6 @@
     />
   </head>
   <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fa fa-arrow-up"></i>
-    </button>
     <!--TOP CONTAINER-->
     <div class="container-fluid bg-light text-white top-container">
       <div class="row">
@@ -107,7 +104,7 @@
               <a
                 class="nav-link text-white fw-bold active"
                 aria-current="page"
-                href="#"
+                href="../homepage/index.html"
                 >HOME</a
               >
             </li>
@@ -127,7 +124,9 @@
             </li>
 
             <li class="nav-item mx-md-3">
-              <a class="nav-link text-white fw-bold" href="#recycling-section"
+              <a
+                class="nav-link text-white fw-bold"
+                href="../homepage/index.html"
                 >RECYCLING</a
               >
             </li>
@@ -182,79 +181,88 @@
     </nav>
     <!--END OF NAVBAR-->
     <header>
-      <h1 style="color: #006b5d">Revolutionizing Waste Management Services</h1>
+      <h1 style="color: #006b5d; margin: 20px">Our Services</h1>
     </header>
 
     <section id="services">
       <div class="container">
-        <h2>Our Services</h2>
-        <!-- <ul>
-          <li>
-            <a href="/homepage/index.html">HOME</a>
-          </li>
-        </ul> -->
-        <div class="service">
-          <img src="./images/waste.jpg" alt="Customized Waste Disposal" />
-          <h3>
-            <i class="fas fa-trash-alt"></i> Customized Waste Disposal Solutions
-          </h3>
-          <p>
-            Get specialized disposal bins tailored to your waste types, equipped
-            with smart sensors for efficient collection.
-          </p>
-        </div>
-        <div class="service">
-          <img src="./images/recycle.jpg" alt="Recycling Partnerships" />
-          <h3><i class="fas fa-recycle"></i> Recycling Partnerships</h3>
-          <p>
-            We collaborate with recycling companies to efficiently process and
-            recycle collected materials, contributing to a circular economy.
-          </p>
-        </div>
-        <div class="service">
-          <img src="./images/incentive.jpg" alt="Incentive Programs" />
-          <h3><i class="fas fa-gift"></i> Incentive Programs</h3>
-          <p>
-            Participate in our reward program and receive incentives based on
-            the amount and type of waste you recycle.
-          </p>
-        </div>
-        <div class="service">
-          <img src="./images/data.jpg" alt="Data Analytics Platform" />
-          <h3><i class="fas fa-chart-line"></i> Data Analytics Platform</h3>
-          <p>
-            Access insights into waste generation patterns and recycling rates
-            through our data analytics platform.
-          </p>
-        </div>
-        <div class="service">
-          <img
-            src="./images/edu.jpg"
-            alt="Education and Outreach Initiatives"
-          />
-          <h3>
-            <i class="fas fa-graduation-cap"></i> Education and Outreach
-            Initiatives
-          </h3>
-          <p>
-            Join our programs aimed at raising awareness about sustainable waste
-            management practices.
-          </p>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="service text-center">
+              <img
+                src="./images/waste.jpg"
+                alt="Customized Waste Disposal"
+                class="service-img"
+              />
+              <h3>
+                <i class="fas fa-trash-alt"></i> Customized Waste Disposal
+              </h3>
+              <p>
+                Get specialized disposal bins tailored to your waste types,
+                equipped with smart sensors for efficient collection.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="service text-center">
+              <img
+                src="./images/recycle.jpg"
+                alt="Recycling Partnerships"
+                class="service-img"
+              />
+              <h3><i class="fas fa-recycle"></i> Recycling Partnerships</h3>
+              <p>
+                We collaborate with recycling companies to efficiently process
+                and recycle collected materials, contributing to a circular
+                economy.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="service text-center">
+              <img
+                src="./images/incentive.jpg"
+                alt="Incentive Programs"
+                class="service-img"
+              />
+              <h3><i class="fas fa-gift"></i> Incentive Programs</h3>
+              <p>
+                Participate in our reward program and receive incentives based
+                on the amount and type of waste you recycle.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="service text-center">
+              <img
+                src="./images/edu.jpg"
+                alt="Education and Outreach Initiatives"
+                class="service-img"
+              />
+              <h3>
+                <i class="fas fa-graduation-cap"></i> Education and Outreach
+                Initiatives
+              </h3>
+              <p>
+                Join our programs aimed at raising awareness about sustainable
+                waste management practices.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="quote">
       <div class="container text-center">
-        <h2 style="text-align: center">
-          Ready to Revolutionize Waste Management?
-        </h2>
+        <h2>Ready to Revolutionize Waste Management?</h2>
         <div class="btn-container">
-          <a href="../homepage/index.html" class="btn">Contact Us</a>
+          <a href="../homepage/index.html" class="btn btn-primary"
+            >Contact Us</a
+          >
         </div>
       </div>
     </section>
-    <!--FOOTER-->
     <footer class="footer-section">
       <div class="container">
         <div class="footer-cta pt-5 pb-5">
@@ -313,32 +321,7 @@
                 <div class="footer-social-icon">
                   <span>Follow us</span>
                   <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                  <a href="#"
-                    ><svg
-                      class="twitter-bg"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 512 512"
-                      id="twitter"
-                    >
-                      <g clip-path="url(#clip0_84_15697)">
-                        <rect
-                          width="512"
-                          height="512"
-                          fill="#000"
-                          rx="60"
-                        ></rect>
-                        <path
-                          fill="#fff"
-                          d="M355.904 100H408.832L293.2 232.16L429.232 412H322.72L239.296 302.928L143.84 412H90.8805L214.56 270.64L84.0645 100H193.28L268.688 199.696L355.904 100ZM337.328 380.32H366.656L177.344 130.016H145.872L337.328 380.32Z"
-                        ></path>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_84_15697">
-                          <rect width="512" height="512" fill="#fff"></rect>
-                        </clipPath>
-                      </defs></svg
-                  ></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                   <a href="#"><i class="fab fa-whatsapp whatsapp-bg"></i></a>
                   <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
                   <a href="#"><i class="fab fa-youtube youtube-bg"></i></a>
@@ -399,7 +382,6 @@
       </div>
     </footer>
     <!--END OF FOOTER-->
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
