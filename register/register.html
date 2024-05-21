@@ -1,3 +1,4 @@
+             
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,87 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="register.css">
-    <title>Code Crafters </title>
+    <title>Code Crafters</title>
 </head>
 
 <body>
 
-    <div class="container" id="container">
-        <div class="form-container sign-up">
-            <form>
-                <h1>Create Account</h1>
-                <div class="social-icons">
-                    <div class="social-media">
-                        <a href="#" class="social-icon"> <i class="fab fa-facebook"></i></a>
-                        <a href="#"class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#"class="social-icon"> <i class="fab fa-google"></i></a>
-                    </div>
-                    
-                </div>
-                <div class="input-field">
-                    
-                <input type="text" placeholder="Username" required>
-                </div>
-                <input
-                type="text"
-                placeholder="FirstName"
-                name="firstName"
-                id="firstName"
-                required
-              />
-              <input
-              type="text"
-              placeholder="lastName"
-              name="lastName"
-              id="lastName"
-              required
-            />
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <input
-                type="password"
-                placeholder="confirm-Password"
-                name="psw-repeat"
-                id="psw-repeat"
-                required
-              />
-                <button>Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in">
-            <form>
-                <h1>Sign In</h1>
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email password</span>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <a href="#">Forgot Password?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome ✨😍</h1>
-                    <p>Already have an account</p>
-                    <button class="hidden" id="login">Sign In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Register with your personal details to use all the site features</p>
-                    <button class="hidden" id="register">Sign Up</button>
+    <div class="sign-in-form-container">
+        <form>
+            <h1>Create Account</h1>
+            <div class="social-icons">
+                <div class="social-media">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
                 </div>
             </div>
+
+            <p>Please fill in this form to create an account.</p>
+            <hr/>
+
             
-        </div>
+            <input type="text" placeholder="Enter First Name" name="firstName" id="firstName" required>
+            <input type="text" placeholder="Enter Surname" name="lastName" id="lastName" required>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
+
+            <label class="top">Choose type of User:</label>
+            <select>
+                <option>Choose</option>
+                <option>Personal</option>
+                <option>Organization</option>
+            </select>
+
+            <hr/>
+
+            <p>Agree to our Terms & Privacy.</p>
+            <button type="submit" class="registerbtn">Register<a href="./signin.html"></a></button>
+            <button type="button" class="cancelbtn">Cancel</button>
+
+            <div class="container signin">
+                <p>Already have an account? <a href="./signIn.html">Sign in</a></p>
+            </div>
+        </form>
     </div>
+    
 
     <script src="register.js"></script>
-</body>
 
+</body>
 </html>
+               
+               
