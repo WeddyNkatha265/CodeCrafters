@@ -1,0 +1,55 @@
+body {
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+  }
+
+  .header {
+    background-image: url(download.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+      background-color: rgba(9, 83, 9, 0.877);
+  }
+  /* span {
+    color: green;
+    font-size: 22px;
+  } */
+  .meet-us {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .mission {
+    background-color: rgba(9, 83, 9, 0.877);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 5px 10px rgba(248, 247, 247, 0.2);
+  }
+  .features {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 5px 10px rgba(252, 249, 249, 0.5);
+  }
+  ul li {
+    margin-bottom: 15px;
+  }
+  .cta {
+    text-align: center;
+    background-color: rgba(9, 83, 9, 0.877);
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+  }
+  .cta button {
+    background-color: green;
+    padding: 15px;
+    color: white;
+    border: none;
+  }
