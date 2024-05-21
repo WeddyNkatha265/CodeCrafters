@@ -1,0 +1,287 @@
+/* services.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.header {
+  text-align: center;
+  color: #006b5d;
+}
+
+.top-container {
+  padding: 10px 0;
+}
+
+.service {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+#quote {
+  padding: 40px 0;
+}
+
+#quote .btn-container .btn {
+  background-color: #006b5d;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.overlay-container {
+  position: relative;
+}
+.overlay-container img {
+  width: 100%;
+  height: 550px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+}
+.overlay-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+}
+.footer-section ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #00ffff;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 15px;
+}
+.footer-social-icon a:hover {
+  color: #00ffff !important;
+}
+.footer-social-icon i,
+.footer-social-icon svg {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg {
+  background: #3b5998;
+}
+.twitter-bg {
+  background: #000;
+}
+.youtube-bg {
+  background: #ff0000;
+}
+.instagram-bg {
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
+}
+.whatsapp-bg {
+  background: #32cd32;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #00ffff;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover {
+  color: #00ffff;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2e2e2e;
+  border: 1px solid #006b5d;
+  color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #00ffff;
+  padding: 13px 20px;
+  border: 1px solid #00ffff;
+  top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a {
+  color: #00ffff;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #00ffff;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+@media only screen and (max-width: 912px) {
+  .overlay-container h1 {
+    font-size: 40px !important;
+  }
+  .overlay-container p {
+    font-size: 13px !important;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #00251a;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+}
