@@ -77,7 +77,24 @@ body{
 }
 
 .container input{
-    background-color: rgb(236, 217, 174);
+    background-color: rgb(240, 237, 230);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.container label{
+    margin: 8px 0;
+    color:#669646;
+    font-size: 13px;
+}
+
+.container select{
+    background-color: rgb(241, 239, 233);
     border: none;
     margin: 8px 0;
     padding: 10px 15px;
@@ -155,7 +172,7 @@ a{
     text-decoration: none;
 }
 .social-icon:hover{
-    color: grey;
+    color: #006b5d !important;
     border-color: black;}
 
 .toggle-container{
@@ -176,7 +193,7 @@ a{
 }
 
 .toggle{
-    background-color: grey;
+    background-color: #006B5D;
     height: 100%;
     
     color: #fff;

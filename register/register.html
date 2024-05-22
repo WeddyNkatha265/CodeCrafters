@@ -24,32 +24,23 @@
                     
                 </div>
                 <div class="input-field">
+                    <label class="top">Choose purpose:</label>
+                    <select required>
+                        <option>Personal</option>
+                        <option>Organization</option>
+                    </select>
                     
                 <input type="text" placeholder="Username" required>
                 </div>
                 <input
                 type="text"
-                placeholder="FirstName"
-                name="firstName"
-                id="firstName"
+                placeholder="FullName"
+                name="fullName"
+                id="fullName"
                 required
               />
-              <input
-              type="text"
-              placeholder="lastName"
-              name="lastName"
-              id="lastName"
-              required
-            />
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Password" required>
-                <input
-                type="password"
-                placeholder="confirm-Password"
-                name="psw-repeat"
-                id="psw-repeat"
-                required
-              />
                 <button>Sign Up</button>
             </form>
         </div>
@@ -63,10 +54,17 @@
                     <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email password</span>
+                <label class="top"> Select user type
+                    <select required>
+                        <option>Personal</option>
+                        <option>Organization</option>
+                    </select> 
+                </label>
                 <input type="email" placeholder="Email" required>
                 <input type="password" placeholder="Password" required>
                 <a href="#">Forgot Password?</a>
-                <button>Sign In</button>
+               <button><a href="/CodeCrafters/homepage/schedule.html">Sign In</a></button> 
+
             </form>
         </div>
         <div class="toggle-container">

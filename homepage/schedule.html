@@ -28,14 +28,11 @@
             display: block;
             margin-bottom: 5px;
         }
-        select, input[type="text"], input[type="date"], input[type="time"] {
+        select, input[type="date"], input[type="time"], textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
-        }
-        .special-instructions {
-            margin-top: 15px;
         }
         .submit-button {
             display: flex;
@@ -55,8 +52,17 @@
     </style>
 </head>
 <body>
+    <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+            <div class="ms-md-5 ps-md-5">
+                <ol class="breadcrumb ms-md-5 ps-md-5">
+                    <li class="breadcrumb-item ms-md-5 ps-md-5"><a href="/CodeCrafters/homepage/index.html" class="text-white text-decoration-none ps-md-5 ms-md-5">Back to Home</a></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
     <div class="container">
-        <a href="index.html" class="text-success">Back to Home</a>
         <h5 class="fw-bold text-center">Schedule Your Waste Pickup</h5>
         <form id="pickup-form">
             <div class="form-group">
@@ -86,7 +92,8 @@
             </div>
         </form>
         <div id="confirmation" style="display:none; text-align:center; margin-top:20px;">
-            <p>Your pickup has been scheduled for <span id="confirm-date"></span> at <span id="confirm-time"></span>.</p>
+            <p>Your pickup has been scheduled for <span id="confirm-date"></span> at <span id="confirm-time"></span>. <a href="index.html" class="text-decoration-none px-2 text-success">Return home</a><br>
+            <a href="claimrewards.html" class="px-2 text-decoration-none text-success">Claim Rewards</a></p>
         </div>
     </div>
 
@@ -96,8 +103,9 @@
             document.getElementById('confirm-date').innerText = document.getElementById('pickup-date').value;
             document.getElementById('confirm-time').innerText = document.getElementById('pickup-time').value;
             document.getElementById('confirmation').style.display = 'block';
+            localStorage.setItem('points', parseInt(localStorage.getItem('points') || '0') + 5);
         });
     </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
