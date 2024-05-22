@@ -1,262 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Claim Your Discount</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'><link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Rewards | CodeCrafters Zero Waste - Revolutionizing Waste Management</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #006b5d;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .rewards-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #reward-message {
+            margin-top: 10px;
+            color: #d9534f;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h5 class="fw-bold text-center">Claim Your Rewards</h5>
+        <div class="points-section">
+            <p>Total Points: <span id="total-points">0</span></p>
+        </div>
+        <div class="rewards-section">
+            <button id="claim-reward-button">Claim 10 Points as Discount</button>
+            <p id="reward-message"></p>
+        </div>
+    </div>
 
-<a href="https://front.codes/" class="logo hover-target" target="_blank">
-		<img src="https://assets.codepen.io/1462889/fcy.png" alt="">
-	</a>	
+    <script>
+        let totalPoints = parseInt(localStorage.getItem('points') || '0');
 
-	<div class="section">	
-		<div class="container pt-5">
-			<div class="row justify-content-center">
-				<div class="col-12 text-center">
-					<h1 class="pb-4">Claim Your<i class='uil uil-garbage color-yellow'></i> Reward!!</h1>
-					<div class="section">
-						<input class="checkbox-ticket" type="radio" name="ticket" id="ticket-1">
-						<label for="ticket-1">
-							<span class="top-dots">
-								<span class="section dots">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</span>
-							</span>
-							<span class="duration">
-								Rural Households
-							</span>
-							<span class="price mt-2 pb-4 mb-3">
-								65% OFF
-							</span>
-							<span class="section dots">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
-							<span class="section pt-4">
-								<i class='uil uil-clock-two mt-3'></i>
-							</span>
-							<span class="time mt-2">
-								Valid: 17/05/2024 - 30/07/20224
-							</span>
-							<span class="bottom-dots">
-								<span class="section dots">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</span>
-							</span>
-						</label><!--
-						--><input class="checkbox-ticket" type="radio" name="ticket" id="ticket-2">
-						<label for="ticket-2">
-							<span class="top-dots">
-								<span class="section dots">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</span>
-							</span>
-							<span class="duration">
-								Suburban Households
-							</span>
-							<span class="price mt-2 pb-4 mb-3">
-								50% OFF
-							</span>
-							<span class="section dots">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
-							<span class="section pt-4">
-								<i class='uil uil-clock-two mt-3'></i>
-							</span>
-							<span class="time mt-2">
-								Valid: 17/05/2024 - 30/07/20224
-							</span>
-							<span class="bottom-dots">
-								<span class="section dots">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</span>
-							</span>
-						</label>
-						<input class="checkbox-ticket" type="radio" name="ticket" id="ticket-3">
-						<label for="ticket-3">
-							<span class="top-dots">
-								<span class="section dots">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</span>
-							</span>
-							<span class="duration">
-								Businesses
-							</span>
-							<span class="price mt-2 pb-4 mb-3">
-								30% OFF
-							</span>
-							<span class="section dots">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
-							<span class="section pt-4">
-								<i class='uil uil-clock-two mt-3'></i>
-							</span>
-							<span class="time mt-2">
-								Valid: 17/05/2024 - 30/07/20224
-							</span>
-							<span class="bottom-dots">
-								<span class="section dots">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</span>
-							</span>
-						</label>
-						<div class="w-100"></div>
-						<a href="#" class="btn mt-4 mb-5"><i class="uil uil-ticket size-22 mr-2"></i>Claim Reward </a>
-						
-					</div>	
-				</div>
-			</div>
-		</div>			
-	</div>
+        document.getElementById('total-points').innerText = totalPoints;
 
-  
+        document.getElementById('claim-reward-button').addEventListener('click', () => {
+            if (totalPoints >= 10) {
+                totalPoints -= 10;
+                localStorage.setItem('points', totalPoints);
+                updatePointsDisplay();
+                showRewardMessage("You have claimed a 10 points discount!");
+            } else {
+                showRewardMessage("Not enough points to claim the reward.");
+            }
+        });
 
+        function updatePointsDisplay() {
+            document.getElementById('total-points').textContent = totalPoints;
+        }
+
+        function showRewardMessage(message) {
+            const rewardMessageElement = document.getElementById('reward-message');
+            rewardMessageElement.textContent = message;
+            rewardMessageElement.style.color = totalPoints >= 10 ? '#28a745' : '#d9534f';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
